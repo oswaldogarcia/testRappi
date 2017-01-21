@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="TestRappi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-1K-5Mc">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="woz-fN-ElF">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="woz-fN-ElF" secondAttribute="height" multiplier="1:1" id="vcq-fm-yjU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="woz-fN-ElF" secondAttribute="trailing" constant="48" id="8Vz-C7-P0e"/>
+                <constraint firstItem="UtR-1K-5Mc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NfP-d0-xt2"/>
+                <constraint firstItem="UtR-1K-5Mc" firstAttribute="top" secondItem="woz-fN-ElF" secondAttribute="bottom" constant="4" id="fz2-bM-bvg"/>
+                <constraint firstAttribute="bottom" secondItem="UtR-1K-5Mc" secondAttribute="bottom" constant="8" id="kdc-kZ-GTU"/>
+                <constraint firstAttribute="trailing" secondItem="UtR-1K-5Mc" secondAttribute="trailing" constant="8" id="n2u-lo-y8H"/>
+                <constraint firstItem="woz-fN-ElF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="47" id="nkK-MJ-Ra5"/>
+                <constraint firstItem="UtR-1K-5Mc" firstAttribute="top" secondItem="woz-fN-ElF" secondAttribute="bottom" constant="4" id="rFQ-ni-sej"/>
+                <constraint firstItem="woz-fN-ElF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="19" id="sV1-sz-0td"/>
+            </constraints>
+            <size key="customSize" width="215" height="189"/>
+            <connections>
+                <outlet property="ivImage" destination="woz-fN-ElF" id="nEA-ZU-TAz"/>
+                <outlet property="lbCatergory" destination="UtR-1K-5Mc" id="gAP-80-5gT"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="98.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
